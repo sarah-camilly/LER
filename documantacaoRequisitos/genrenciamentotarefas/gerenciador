@@ -60,9 +60,23 @@ O SGT permitirá que usuários criem, organizem e acompanhem tarefas pessoais e 
    **Rastreabilidade**: Derivado de NS-002
   **Critérios de Aceitação**:
 
- - [ ] Usuário pode criar, renomear e excluir projetos
- - [ ] Tarefas podem ser atribuidas a um ou mais projetos
- - [ ] Visualização filtrada por projetos
+- [ ] Usuário pode criar, renomear e excluir projetos
+- [ ] Tarefas podem ser atribuidas a um ou mais projetos
+- [ ] Visualização filtrada por projetos
+
+   ---
+
+#### RF-003: Marcação de Tarefas como Concluída
+
+  **Descrição**: O sistema deve permitir a marcação de tarefa como concluída
+  **Prioridade**: Média
+  **Versão**: 1.0
+  **Data** 2026-04-08
+   **Rastreabilidade**: Derivado de NS-001
+  **Critérios de Aceitação**:
+
+- [ ] Usuário pode marcar tarefa como concluída
+- [ ] Visualização filtrada por concluída
   
   ---
 
@@ -91,23 +105,29 @@ O SGT permitirá que usuários criem, organizem e acompanhem tarefas pessoais e 
 
 ### Histórico de Alterações
 
-|Versão|Data|Autor|
-|-|-|-|
-|1.0|2026-03-25|Sarah|Versão Inicial|
+|Versão|Data      |Autor  |Modificação   |
+|------|----------|-------|--------------|
+|1.0   |2026-03-25|Sarah|Versão Inicial  |
+| 1.1  |2026-04-08|Sarah|Adiconada a RF-003|
+
 
 ### Rastreabilidade
 
 
 Gráfico de Rastreabilidade
+
 ```mermaid
 
 graph TD
 
-    NS001['NS-001: Necessidade Stakeholder] --> RF001['RF-001: Criação Tarefas']
-    RF001 --> TC001['TC-001: Teste Criação]
+    NS001['NS-001: Necessidade Stakeholder'] --> RF001['RF-001: Criação Tarefas']
+    RF001 --> TC001['TC-001: Teste Criação']
 
     NS002['NS-002: Organização'] --> RF002['RF-002: Projetos']
     RF002 --> TC002['TC-002: Teste Projetos']
+
+    NS001['NS-001: Necessidade Stakeholder'] --> RF003['RF-003: Tarefa Concluída']
+    RF003 --> TC003['TC-003: Teste de Tarefa']
 
 ```
 
