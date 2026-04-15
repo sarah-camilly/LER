@@ -68,4 +68,3 @@ Versão|Data      |Autor  |Modificação   |
 
 ## 5. Conclusão 
 A evolução do requisito RF-010 demonstra a adaptabilidade do Sistema de Reservas de Hotel (SRH) às demandas dinâmicas do mercado e às estratégias de fidelização da empresa.
-O processo detalhado neste documento garante que:
